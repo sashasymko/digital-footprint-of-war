@@ -46,7 +46,7 @@ Once you have access to the datasets, place them as follows:
 data/
 ├── raw_data/            ← Ukrainian Instagram data
 ├── control_data/        ← German WhatsApp data
-└── external_data/
+└── external_data/       ← Files from Kaggle
     ├── missile_attacks_daily.csv
     └── missiles_and_uavs.csv
 ```
@@ -59,9 +59,11 @@ Run notebooks in the following order:
 01_data_preprocessing/    ← run all notebooks in order (01 → 04)
 02_rq1/
     ├── 01_descriptive_analysis/    ← run all notebooks in order (01 → 05)
-    ├── 02_clustering/
+    ├── 02_clustering/              ← run clustering notebook
     └── 03_classification/          ← run all notebooks in order (01 → 03)
 03_rq2/                   ← run all notebooks in order (01 → 03)
 04_rq3/                   ← run all notebooks in order (01 → 04)
 ```
+Note: research question folders (02_rq1, 03_rq2, 04_rq3) can be run in any order, but notebooks within each folder must be run in the numbered order.
 
+01_data_preprocessing/ must be run first before any analysis.
